@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-
+    //This is a comment
     private fun searchPokemonList(){
         CoroutineScope(Dispatchers.IO).launch {
             val call = getRetrofit().create(APIService::class.java).getPokemonList("?offset=0&limit=968")
